@@ -1,13 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 .mainbody{
-    width: 100%;
-    padding-left: 25%;
-    padding-right: 25%;
+    width: 100vw;
+    padding-left: 20%;
+    padding-right: 20%;
+    display: flex;
 }
 .slideshow {
+    position: relative;
     background-size: cover;
     background-position: center;
-    width: 50%;
-    height: 500px;
+    width: 60%;
+    height: 450px;
     color: white;
-    border-radius: 5%;
+    border-radius: 2%;
+    transition: transform 0.8s ease-in-out;
+}
+
+.slideinfo{
+    display: flex;
+    position: absolute;
+    font-size: 25px;
+    gap: 25px;
+    align-items: center;
+    flex-direction: row;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    transform: translate3d(20px, 380px, 0px);
+}
+
+
+.leftArrow, .rightArrow{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    transform: translate3d(-20px, 200px, 0px);
+    background-color: #1A1A2E;
+    color: white;
+    border: 0px;
+}
+.rightArrow{
+    transform: translate3d(117vh, 200px, 0px);
+}
+
+.leftArrow:hover, .rightArrow:hover{
+    color: #FF8C42;
+    transition: 0.5s;
 }
