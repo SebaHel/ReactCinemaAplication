@@ -1,0 +1,22 @@
+.dayContainer{
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    transform: translate3d(200px,60px,0);
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    gap: 20px
+}
+
+.dayCard{
+    border: 0.5px solid white;
+    width: 60px;
+    height: 60px;
+    
+}
+
+
+.dayCard p{
+    transform: translate3d(0, -20px,0);
+}
