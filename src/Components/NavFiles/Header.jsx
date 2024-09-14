@@ -5,7 +5,7 @@ import classes from './Header.module.css'
 export default function Header(){
     return(
         <header className={classes.header}>
-            <span className="material-symbols-outlined" style={{fontSize:"40px", justifyContent:'center',alignContent:'center'}}>videocam</span>
+            <Link to="/" className={classes.link}><span className="material-symbols-outlined" style={{fontSize:"40px", justifyContent:'center',alignContent:'center'}}>videocam</span></Link>
             <div className={classes.nav}>
                 <Link to="/repertoire" className={classes.link}>REPERTOIRE</Link>
                 <Link to="/pricing" className={classes.link}>PRICING</Link>

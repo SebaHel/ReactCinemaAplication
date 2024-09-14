@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+}
+.footer {
+    background-color: #1A1A2E;
+    color: #ffffff;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.footerContent > div {
+    flex: 1;
+    margin: 10px;
+}
+
+.infoSection h4, .hoursSection h4, .socialSection h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #FF8C42;
+}
+
+.hoursSection p, .infoSection p {
+    margin: 5px 0;
+}
+
+.socialSection a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 5px 0;
+    transition: color 0.3s;
+}
+
+.socialSection a:hover {
+    color: #FF8C42;
+}
+
+.footerBottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #dddddd;
+}

@@ -1,6 +1,7 @@
 import classes from './App.module.css'
-import Header from '../Components/Header'
+import Header from '../Components/NavFiles/Header'
 import AppMain from '../Components/AppMain'
+import Footer from '../Components/NavFiles/Footer'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <Header />
       <AppMain />
+      <Footer />
     </>
   )
 }
