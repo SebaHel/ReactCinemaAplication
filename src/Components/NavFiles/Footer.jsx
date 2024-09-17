@@ -20,10 +20,27 @@ export default function Footer(){
                 </div>
 
                 <div className={classes.socialSection}>
-                    <h4>Follow Us</h4>
-                    <p>Facebook</p>
-                    <p>Instagram</p>
-                    <p>Twitter</p>
+                    <h4 >Social Media</h4>
+                    <div>
+                        <span className="fa fa-facebook"></span>
+                        <p>Facebook</p>
+                    </div>
+                    <div>
+                        <span className="fa fa-instagram"></span>
+                        <p>Instagram</p>
+                    </div>
+                    <div>
+                        <span className="fa fa-twitter"></span>
+                        <p>Twitter</p>
+                    </div>
+                    <div>
+                        <span className="fa fa-linkedin"></span>
+                        <p>linkedin</p>
+                    </div>
+                    <div>
+                        <span className="fa fa-youtube"></span>
+                        <p>Youtube</p>
+                    </div>
                 </div>
             </div>
             <div className={classes.footerBottom}>

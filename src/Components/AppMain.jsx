@@ -2,6 +2,7 @@ import AppMainSlider from "./AppMainSlider"
 import FilmCards from "./FilmCards";
 import classes from './AppMain.module.css'
 import DayCard from "./DayCard";
+import FullRepertoireSlider from "./FullRepertoireSlider";
 
 function AppMain(){
     return(
@@ -13,12 +14,8 @@ function AppMain(){
             </p>
           <DayCard />
         </div>
-        <div className={classes.interlude}>
-            <p>
-                In Repertoire
-            </p>
-        </div>
         <FilmCards />
+        <FullRepertoireSlider />
     </>
     )
 }

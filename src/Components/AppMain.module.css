@@ -1,14 +1,4 @@
-.interlude{
-    margin-top: 100px;
-    margin-left: 20%;
-    margin-right: 20%;
-    width: 20%;
-    border-bottom: 2px solid rgb(212, 6, 6);
-}
-.interlude p{
-    font-size: 32px;
-    color: white;
-}
+
 .weeknav{
     position: relative;
     background-color: #D72638;

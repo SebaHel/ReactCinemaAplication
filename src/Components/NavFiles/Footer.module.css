@@ -4,10 +4,10 @@ body{
 .footer {
     background-color: #1A1A2E;
     color: #ffffff;
-    padding: 40px 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-top: 1px solid #ffffff;
 }
 
 .footerContent {
@@ -16,25 +16,41 @@ body{
     flex-wrap: wrap;
     padding-bottom: 20px;
     border-bottom: 1px solid #ffffff;
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 .footerContent > div {
     flex: 1;
     margin: 10px;
 }
+.socialSection{
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.socialSection div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    height: 30px;
+}
 
+.socialSection div p{
+    font-size: 18px;
+}
 .infoSection h4, .hoursSection h4, .socialSection h4 {
     margin-bottom: 10px;
     font-size: 18px;
     color: #FF8C42;
 }
 
-.hoursSection p, .infoSection p {
-    margin: 5px 0;
-}
-
 .socialSection a {
-    display: block;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
     color: #ffffff;
     text-decoration: none;
     margin: 5px 0;
