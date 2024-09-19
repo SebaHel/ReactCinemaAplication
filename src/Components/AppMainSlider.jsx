@@ -57,7 +57,6 @@ function AppMainSlider(){
                 </div>
                 <button className={classes.leftArrow} onClick={onClickHandler}><span className="material-symbols-outlined" style={{fontSize:'40px'}}>keyboard_arrow_left</span></button>
                 <button className={classes.rightArrow} onClick={onClickHandler}><span className="material-symbols-outlined" style={{fontSize:'40px'}}>keyboard_arrow_right</span></button>
-
             </div>
         </>
     )

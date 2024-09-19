@@ -1,0 +1,11 @@
+.RepertoireDayCard {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    margin: 0 20% 0 25%;
+    background-color: #D72638;
+    width: 1000px;
+    height: 250px;
+    border-radius: 25px;
+
+}
