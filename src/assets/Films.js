@@ -29,7 +29,10 @@ const FilmList = [
         Category: "Sci-Fi",
         Hours: ["10:00", "14:30", "19:00", "22:00"],
         Duration: 148,
-        Days: ["Mon", "Wed", "Fri", "Sun"]
+        Days: ["Mon", "Wed", "Fri", "Sun"],
+        AudioOptions: ["Napisy", "Dubbing"],
+        MinAge: 13,
+        EndTimes: ["12:28", "17:58", "21:28", "00:28"]
     },
     {
         Id: 2,
@@ -40,7 +43,10 @@ const FilmList = [
         Category: "Crime, Drama",
         Hours: ["12:00", "16:00"],
         Duration: 175,
-        Days: ["Tue", "Thu", "Sat"]
+        Days: ["Tue", "Thu", "Sat"],
+        AudioOptions: ["Napisy", "Lektor"],
+        MinAge: 16,
+        EndTimes: ["14:55", "18:55"]
     },
     {
         Id: 3,
@@ -51,7 +57,11 @@ const FilmList = [
         Category: "Action, Crime, Drama",
         Hours: ["11:00", "15:30", "18:00", "21:00", "23:30"],
         Duration: 152,
-        Days: ["Mon", "Thu", "Fri", "Sat"]
+        Days: ["Mon", "Thu", "Fri", "Sat"],
+        AudioOptions: ["Napisy", "Dubbing"],
+        MinAge: 14,
+        EndTimes: ["13:32", "18:02", "20:32", "23:32", "02:02"]
+
     },
     {
         Id: 4,
@@ -62,7 +72,10 @@ const FilmList = [
         Category: "Drama, Romance",
         Hours: ["10:30", "14:00", "18:30"],
         Duration: 142,
-        Days: ["Tue", "Wed", "Sun"]
+        Days: ["Tue", "Wed", "Sun"],
+        AudioOptions: ["Napisy"],
+        MinAge: 12,
+        EndTimes: ["12:52", "16:22", "21:02"]
     },
     {
         Id: 5,
@@ -73,7 +86,10 @@ const FilmList = [
         Category: "Crime, Drama",
         Hours: ["12:30", "17:00", "21:30", "00:00"],
         Duration: 154,
-        Days: ["Mon", "Fri", "Sat"]
+        Days: ["Mon", "Fri", "Sat"],
+        AudioOptions: ["Napisy", "Lektor"],
+        MinAge: 16,
+        EndTimes: ["15:04", "19:34", "00:04", "02:34"]
     },
     {
         Id: 6,
@@ -84,7 +100,10 @@ const FilmList = [
         Category: "Biography, Drama, History",
         Hours: ["09:00", "12:00", "15:00", "18:00", "21:00"],
         Duration: 195,
-        Days: ["Wed", "Sat", "Sun"]
+        Days: ["Wed", "Sat", "Sun"],
+        AudioOptions: ["Napisy"],
+        MinAge: 16,
+        EndTimes: ["12:15", "15:15", "18:15", "21:15", "00:15"]
     },
     {
         Id: 7,
@@ -95,7 +114,10 @@ const FilmList = [
         Category: "Drama",
         Hours: ["13:00", "17:30", "20:30", "23:45"],
         Duration: 142,
-        Days: ["Tue", "Thu", "Sat", "Sun"]
+        Days: ["Tue", "Thu", "Sat", "Sun"],
+        AudioOptions: ["Napisy", "Lektor"],
+        MinAge: 15,
+        EndTimes: ["15:22", "20:02", "23:02", "02:07"]
     },
     {
         Id: 8,
@@ -106,7 +128,10 @@ const FilmList = [
         Category: "Drama",
         Hours: ["14:00", "18:30"],
         Duration: 139,
-        Days: ["Mon", "Wed", "Fri"]
+        Days: ["Mon", "Wed", "Fri"],
+        AudioOptions: ["Napisy"],
+        MinAge: 16,
+        EndTimes: ["16:19", "20:49"]
     },
     {
         Id: 9,
@@ -117,7 +142,10 @@ const FilmList = [
         Category: "Action, Sci-Fi",
         Hours: ["11:30", "14:00", "16:30", "19:00", "21:30"],
         Duration: 136,
-        Days: ["Mon", "Thu", "Sat"]
+        Days: ["Mon", "Thu", "Sat"],
+        AudioOptions: ["Napisy", "Dubbing"],
+        MinAge: 13,
+        EndTimes: ["13:46", "16:36", "19:06", "21:36", "00:06"]
     },
     {
         Id: 10,
@@ -128,7 +156,10 @@ const FilmList = [
         Category: "Action, Adventure, Fantasy",
         Hours: ["09:00", "13:00", "17:00", "21:00"],
         Duration: 121,
-        Days: ["Tue", "Fri", "Sun"]
+        Days: ["Tue", "Fri", "Sun"],
+        AudioOptions: ["Napisy", "Dubbing"],
+        MinAge: 12,
+        EndTimes: ["11:01", "15:01", "19:01", "23:01"]
     },
     {
         Id: 11,
@@ -139,7 +170,10 @@ const FilmList = [
         Category: "Adventure, Drama, Fantasy",
         Hours: ["10:00", "14:00", "18:00"],
         Duration: 178,
-        Days: ["Mon", "Wed", "Sat"]
+        Days: ["Mon", "Wed", "Sat"],
+        AudioOptions: ["Napisy", "Dubbing"],
+        MinAge: 14,
+        EndTimes: ["12:58", "16:58", "20:58"]
     },
     {
         Id: 12,
@@ -150,7 +184,10 @@ const FilmList = [
         Category: "Adventure, Drama, Sci-Fi",
         Hours: ["12:00", "16:00", "20:00"],
         Duration: 169,
-        Days: ["Tue", "Thu", "Sun"]
+        Days: ["Tue", "Thu", "Sun"],
+        AudioOptions: ["Napisy", "Lektor"],
+        MinAge: 12,
+        EndTimes: ["14:49", "18:49", "22:49"]
     },
     {
         Id: 13,
@@ -161,7 +198,10 @@ const FilmList = [
         Category: "Action, Adventure, Drama",
         Hours: ["11:00", "15:00", "19:00", "22:30"],
         Duration: 155,
-        Days: ["Wed", "Fri", "Sat"]
+        Days: ["Wed", "Fri", "Sat"],
+        AudioOptions: ["Napisy", "Lektor"],
+        MinAge: 14,
+        EndTimes: ["13:35", "17:35", "21:35", "00:05"]
     },
     {
         Id: 14,
@@ -172,7 +212,10 @@ const FilmList = [
         Category: "Crime, Drama, Thriller",
         Hours: ["09:30", "14:30", "19:30", "22:30"],
         Duration: 118,
-        Days: ["Mon", "Thu", "Sat"]
+        Days: ["Mon", "Thu", "Sat"],
+        AudioOptions: ["Napisy"],
+        MinAge: 16,
+        EndTimes: ["11:28", "16:28", "21:28", "00:28"]
     },
     {
         Id: 15,
@@ -183,7 +226,10 @@ const FilmList = [
         Category: "Animation, Adventure, Drama",
         Hours: ["10:00", "13:30", "17:00"],
         Duration: 88,
-        Days: ["Wed", "Fri", "Sun"]
+        Days: ["Wed", "Fri", "Sun"],
+        AudioOptions: ["Napisy", "Dubbing"],
+        MinAge: 8,
+        EndTimes: ["11:28", "15:58", "19:30"]
     },
     {
         Id: 16,
@@ -194,7 +240,10 @@ const FilmList = [
         Category: "Adventure, Sci-Fi",
         Hours: ["11:00", "15:00", "19:00", "21:45"],
         Duration: 127,
-        Days: ["Mon", "Tue", "Sat"]
+        Days: ["Mon", "Tue", "Sat"],
+        AudioOptions: ["Napisy", "Dubbing"],
+        MinAge: 13,
+        EndTimes: ["13:07", "17:07", "21:07", "23:52"]
     },
     {
         Id: 17,
@@ -205,7 +254,10 @@ const FilmList = [
         Category: "Action, Adventure, Fantasy",
         Hours: ["12:30", "16:30", "21:00"],
         Duration: 162,
-        Days: ["Tue", "Fri", "Sat"]
+        Days: ["Tue", "Fri", "Sat"],
+        AudioOptions: ["Napisy", "Dubbing"],
+        MinAge: 12,
+        EndTimes: ["15:12", "19:12", "23:42"]
     },
     {
         Id: 18,
@@ -216,7 +268,10 @@ const FilmList = [
         Category: "Action, Adventure, Sci-Fi",
         Hours: ["10:00", "14:00", "18:30", "22:30"],
         Duration: 143,
-        Days: ["Wed", "Fri", "Sun"]
+        Days: ["Wed", "Fri", "Sun"],
+        AudioOptions: ["Napisy", "Dubbing"],
+        MinAge: 12,
+        EndTimes: ["12:23", "16:23", "21:13", "00:53"]
     },
     {
         Id: 19,
@@ -227,7 +282,10 @@ const FilmList = [
         Category: "Drama, Romance",
         Hours: ["09:00", "13:00", "17:30", "21:30", "23:45"],
         Duration: 195,
-        Days: ["Mon", "Thu", "Sat"]
+        Days: ["Mon", "Thu", "Sat"],
+        AudioOptions: ["Napisy", "Lektor"],
+        MinAge: 13,
+        EndTimes: ["12:15", "17:15", "21:45", "01:45", "02:00"]
     }
 ];
 export default FilmList

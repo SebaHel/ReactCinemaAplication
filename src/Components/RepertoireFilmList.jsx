@@ -13,7 +13,19 @@ export default function RepertoireFilmList(){
                             <p className={classes.nameParagraph} >{film.Name}</p>
                             <p className={classes.descriptionParagraph} >{film.Description}</p>
                             <p className={classes.descriptionParagraph} >Time: {film.Duration}</p>
-                            <p className={classes.descriptionParagraph} >{film.Category}</p>
+                            <p className={classes.descriptionParagraph} >Category: {film.Category}</p>
+                            <div className={classes.filmBox}>
+                                {film.Hours.map((time,index) => (
+                                    <div key={index} className={classes.box}>
+                                        <p className={classes.time}>{time} - {film.EndTimes[index]}</p>
+                                        <div>
+                                            {film.AudioOptions.map((audio, index) =>(
+                                                <p key={index} className={classes.audio}>{audio}</p>
+                                            ))}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
                          </div>
                      </div>
 
