@@ -9,6 +9,7 @@ export default function Repertoire (){
         <>
         <Header />
         <div className={classes.RepertoireDayCard}>
+            <p className={classes.paragraph}>Choose Day You're intrested In</p>
             <DayCard />
         </div>
         <RepertoireFilmList />

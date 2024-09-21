@@ -2,7 +2,7 @@
     display: flex;
     overflow: hidden;
     white-space: nowrap;
-    width: 75%;
+    width: 74%;
     transform: translate3d(150px,60px,0);
     flex-direction: row;
     margin: 0;

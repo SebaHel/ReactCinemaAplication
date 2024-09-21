@@ -45,7 +45,6 @@
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
 }
-
 .filmBox{
     border-top: 1px solid rgba(255, 255, 255, 0.534);
     padding-top: 30px;
@@ -80,3 +79,4 @@
     font-size: 14px;
     color: rgba(255, 255, 255, 0.795);
 }
+

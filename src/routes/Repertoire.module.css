@@ -7,5 +7,10 @@
     width: 1000px;
     height: 250px;
     border-radius: 25px;
-
+}
+.paragraph{
+    color: white;
+    position: relative;
+    font-size: 36px;
+    transform: translate3d(50px,50px,0px);
 }
