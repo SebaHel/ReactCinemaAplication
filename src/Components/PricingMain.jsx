@@ -1,32 +1,13 @@
 import classes from './PricingMain.module.css'
+import TicketTable from './TicketTable'
 
 function PricingMain(){
     return(
         <>
         <div className={classes.main}>
-            <p id={classes.Pricing}>Ticket Pricing</p>
-            <div className={classes.priceContainer}>
-                <div className={classes.labels}>
-                    <p>Normal Ticket</p>
-                    <p>Weekend</p>
-                    <p>CinemaFriday</p>
-                </div>
-                <div className={classes.mainSeance}>
-                    <p>Week to seance</p>
-                </div>
-                <div className={classes.seance}>
-                    <p>3 days to seance</p>
-                </div>
-                <div className={classes.seance}>
-                    <p>2 days to seance</p>
-                </div>
-                <div className={classes.seance}>
-                    <p>1 day to seance</p>
-                </div>
-                <div className={classes.seance}>
-                    <p>Day of seance</p>
-                </div>
-            </div>
+            <TicketTable price1={10} price2 ={12} price3={14} price4={16} name ="Normal Ticket"/>
+            <TicketTable price1={8} price2 ={10} price3={12} price4={14} name ="Discounted Ticket"/>
+            <TicketTable price1={6} price2 ={8} price3={10} price4={12} name ="Kid Ticket"/>
         </div>
         </>
     )
