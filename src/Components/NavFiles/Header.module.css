@@ -20,11 +20,45 @@ header{
     display: flex;
     color: white;
     text-decoration: none;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 
 .link:hover{
     color: #FF8C42;
     transition: 0.5s;
+}
+label{
+    position: absolute;
+    color: black;
+    margin: 20px;
+}
+
+.NavList{
+    position: absolute;
+    margin: 0 25% 0 18%;
+    padding: 0;
+    left: 0;
+    width: 64%;
+    height: 400px;
+    z-index: 10;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+}
+.Repertoireinfo{
+    margin-left: 25px;
+    margin-top: 40px;
+    width: 170px;
+    height: 240px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+#description{
+    transform:translateY(240px);
+    color: black;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
