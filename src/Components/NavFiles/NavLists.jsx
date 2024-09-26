@@ -1,75 +1,60 @@
-import { useState } from 'react';
+import { useState,  useEffect} from 'react';
 import Films from '../../assets/Films'
-import classes from './Header.module.css'
 import NavFilmCard from './NavFilmCard';
+import NavModal from './NavModal';
 export default function NavList(){
 
-    const [isHovered, setIsHovered] = useState(null);
 
-    const handleMouseEnter = (state) => {
-      setIsHovered(state);
+    const [randomIndexes, setRandomIndexes] = useState([]);
+
+    const getRandomIndexes = (arrayLength, num) => {
+        const indexes = new Set();
+        while (indexes.size < num) {
+            const randomIndex = Math.floor(Math.random() * arrayLength);
+            indexes.add(randomIndex);
+        }
+        return [...indexes];
     };
-  
-    const handleMouseLeave = () => {
-      setIsHovered(null);
-    };
+
+    useEffect(() => {
+        const numOfFilms = 6;
+        setRandomIndexes(getRandomIndexes(Films.length, numOfFilms));
+    }, [Films]);
 
     return(
         <>
-        <div onMouseEnter={()=> handleMouseEnter('kids')} onMouseLeave={handleMouseLeave} className={classes.hoverWrapper}>
-            <p>KIDS</p>
-            {isHovered === 'kids' && (
-                <div className={classes.NavList}>
-                    <label>MOVIES</label>
-                        {Films.map((film) => {
-                            if(film.MinAge > 12){
-                                return null;
-                            }
-                            return (
-                                <NavFilmCard Filmimg = {film.img}  filmAge = {film.MinAge} filmName={film.Name} key={film.id}/>
-                            )
-                        })}
-                    <div>
+        <NavModal name={"KIDS"}>
+            {Films.map((film) => {
+                if(film.MinAge > 12){
+                    return null;
+                }
+                return (
+                    <div key={film.img}>
+                        <NavFilmCard Filmimg = {film.img}  filmAge = {film.MinAge} filmName={film.Name} key={film.name}/>
+                    </div>
+                )
+            })}
+        </NavModal>
+
+        <NavModal name={"COMMING SOON"}>
+            {randomIndexes.map((index) => {
+                const film = Films[index];
+                return (
+                    <div key={index}>
+                        <NavFilmCard Filmimg = {film.img}  filmAge = {film.MinAge} filmName={film.Name} key={film.id}/>
+                    </div>
+                )
+            })}
+        </NavModal>
+
+
+        <NavModal name={"Action"}>
+            {Films.filter(film => film.Category.includes('Action')).map(film => (
+                <div key={film.Duration}>
+                    <NavFilmCard Filmimg = {film.img}  filmAge = {film.MinAge} filmName={film.Name} key={film.Description}/>
                 </div>
-            </div>
-            )}
-        </div>
-        <div onMouseEnter={()=> handleMouseEnter('CommingSoon')} onMouseLeave={handleMouseLeave} className={classes.hoverWrapper}>
-            <p>COMMING SOON</p>
-            {isHovered === 'CommingSoon' && (
-                <div className={classes.NavList}>
-                    <label>MOVIES</label>
-                        {Films.map((film) => {
-                            if(film.MinAge > 12){
-                                return null;
-                            }
-                            return (
-                                <NavFilmCard Filmimg = {film.img}  filmAge = {film.MinAge} filmName={film.Name} key={film.id}/>
-                            )
-                        })}
-                    <div>
-                </div>
-            </div>
-            )}
-        </div>
-        <div onMouseEnter={()=> handleMouseEnter('Action')} onMouseLeave={handleMouseLeave} className={classes.hoverWrapper}>
-            <p>ACTION</p>
-            {isHovered === 'Action' && (
-                <div className={classes.NavList}>
-                    <label>MOVIES</label>
-                        {Films.map((film) => {
-                            if(film.MinAge > 12){
-                                return null;
-                            }
-                            return (
-                                <NavFilmCard Filmimg = {film.img}  filmAge = {film.MinAge} filmName={film.Name} key={film.id}/>
-                            )
-                        })}
-                    <div>
-                </div>
-            </div>
-            )}
-        </div>
+            ))}
+        </NavModal>
         </>
     )
 }

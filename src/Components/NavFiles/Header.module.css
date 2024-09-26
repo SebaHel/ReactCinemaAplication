@@ -33,6 +33,17 @@ label{
     color: black;
     margin: 20px;
 }
+.overlay {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0f0e17cb;;
+    display: flex;
+    z-index: 1000;
+}
+
 
 .NavList{
     position: absolute;
@@ -49,7 +60,7 @@ label{
 }
 .Repertoireinfo{
     margin-left: 25px;
-    margin-top: 40px;
+    margin-top: 50px;
     width: 170px;
     height: 240px;
     background-size: cover;
