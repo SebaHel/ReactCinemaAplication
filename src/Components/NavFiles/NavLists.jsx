@@ -30,7 +30,7 @@ export default function NavList(){
                 }
                 return (
                     <div key={film.img}>
-                        <NavFilmCard Filmimg = {film.img}  filmAge = {film.MinAge} filmName={film.Name} key={film.name}/>
+                        <NavFilmCard Filmimg = {film.img}  filmAge = {film.MinAge} filmName={film.Name} key={film.name} filmID={film.Id}/>
                     </div>
                 )
             })}

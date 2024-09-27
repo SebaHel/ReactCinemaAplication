@@ -1,5 +1,5 @@
 import classes from './FullRepertoireSlider.module.css'
-
+import { Link } from 'react-router-dom'
 import { useState } from "react";
 import Films from '../assets/Films';
 import Interlude from './Interlude';
@@ -30,8 +30,9 @@ export default function FullRepertoireSlider(){
             <div className={classes.slider}>
                 {Films.map((film) => (
                     <div key={film.Id} className={classes.card}>
-                         <div className={classes.Repertoireinfo} style={{ backgroundImage: `url(${film.img})`, transform: `translateX(${700 - (300 * currentIndex)}px)`, transition: "1s"}}> 
-                         </div>
+                        <Link to={`/film/${film.Id}`}>
+                         <div className={classes.Repertoireinfo} style={{ backgroundImage: `url(${film.img})`, transform: `translateX(${700 - (300 * currentIndex)}px)`, transition: "1s"}} /> 
+                         </Link>
                          <p className={classes.nameParagraph} style={{ transform: `translateX(${700 - (300 * currentIndex)}px)`, transition: "1s"}} >{film.Name}</p>
                      </div>
 

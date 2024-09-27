@@ -7,11 +7,13 @@ import App from './routes/App'
 import './index.css'
 import Repertoire from './routes/Repertoire'
 import Pricing from './routes/Pricing'
+import FilmInfo from './routes/FilmInfo'
 
 const router = createBrowserRouter([
   {path: '/', element: <App />},
   {path: '/repertoire', element: <Repertoire />},
-  {path: '/pricing', element: <Pricing />}
+  {path: '/pricing', element: <Pricing />},
+  {path: '/film/:Id', element: <FilmInfo />}
 ]);
 
 
