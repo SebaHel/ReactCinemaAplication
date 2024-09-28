@@ -30,7 +30,7 @@ export default function NavList(){
                 }
                 return (
                     <div key={film.img}>
-                        <NavFilmCard Filmimg = {film.img}  filmAge = {film.MinAge} filmName={film.Name} key={film.name} filmID={film.Id}/>
+                        <NavFilmCard Filmimg = {film.img}  filmAge = {film.MinAge} filmName={film.Name} keyid={film.name} filmID={film.Id}/>
                     </div>
                 )
             })}
@@ -41,7 +41,7 @@ export default function NavList(){
                 const film = Films[index];
                 return (
                     <div key={index}>
-                        <NavFilmCard Filmimg = {film.img}  filmAge = {film.MinAge} filmName={film.Name} key={film.id}/>
+                        <NavFilmCard Filmimg = {film.img}  filmAge = {film.MinAge} filmName={film.Name} keyid={film.id} filmID={film.Id}/>
                     </div>
                 )
             })}
@@ -51,7 +51,7 @@ export default function NavList(){
         <NavModal name={"Action"}>
             {Films.filter(film => film.Category.includes('Action')).map(film => (
                 <div key={film.Duration}>
-                    <NavFilmCard Filmimg = {film.img}  filmAge = {film.MinAge} filmName={film.Name} key={film.Description}/>
+                    <NavFilmCard Filmimg = {film.img}  filmAge = {film.MinAge} filmName={film.Name} keyid={film.Description} filmID={film.Id}/>
                 </div>
             ))}
         </NavModal>

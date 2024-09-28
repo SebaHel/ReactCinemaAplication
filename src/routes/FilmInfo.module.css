@@ -1,0 +1,43 @@
+.filmMain{
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 40px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 50px;
+}
+.image{
+    margin-left: 25px;
+    margin-top: 50px;
+    width: 340px;
+    height: 480px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+#filmTitle{
+    font-size: 50px;
+    margin-bottom: 0;
+}
+.filmDescription{
+    display: flex;
+    gap: 30px;
+}
+.ContainerDescription p {
+    color: white;
+}
+.Box{
+    display: grid;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.boxContainer{
+    display: flex;
+    gap: 30px;
+}
+
+#seanseDate{
+    font-size: 24px;
+    color: #E63946;
+}
