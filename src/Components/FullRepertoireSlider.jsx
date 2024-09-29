@@ -34,11 +34,12 @@ export default function FullRepertoireSlider(){
                          <div className={classes.Repertoireinfo} style={{ backgroundImage: `url(${film.img})`, transform: `translateX(${700 - (300 * currentIndex)}px)`, transition: "1s"}} /> 
                          </Link>
                          <p className={classes.nameParagraph} style={{ transform: `translateX(${700 - (300 * currentIndex)}px)`, transition: "1s"}} >{film.Name}</p>
+                         <p className={classes.nameParagraph} style={{ transform: `translateX(${700 - (300 * currentIndex)}px)`, transition: "1s"}} >{film.Description}</p>
                      </div>
 
                 ))}
             </div>
-            <Arrows onClickNextHandler={onClickNextHandler} onClickPrevHandler={onClickPrevHandler}/>
+            <Arrows onClickNextHandler={onClickNextHandler} onClickPrevHandler={onClickPrevHandler} LeftclassName="leftArrow" RightclassName ='rightArrow'/>
          </>
     )
 }

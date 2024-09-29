@@ -20,3 +20,44 @@
 .rightArrow{
     transform: translate3d(1400px, 0px, 0);
 }
+
+.leftArrow1, .rightArrow1{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: #D72638;
+    color: black;
+    border: 0px;
+}
+
+.leftArrow1:hover, .rightArrow1:hover{
+    background-color: rgba(255, 255, 255, 0.445);
+    color: black;
+}
+.leftArrow1{
+    transform: translate3d(100px, -10px, 0);
+}
+.rightArrow1{
+    transform: translate3d(881px, -10px, 0);
+}
+
+.leftArrowSlider, .rightArrowSlider{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    transform: translate3d(-20px, 200px, 0px);
+    background-color: #1A1A2E;
+    color: white;
+    border: 0px;
+    z-index: 1;
+}
+.rightArrowSlider{
+    transform: translate3d(117vh, 200px, 0px);
+}
+
+.leftArrowSlider:hover, .rightArrowSlider:hover{
+    color: #FF8C42;
+    transition: 0.5s;
+}

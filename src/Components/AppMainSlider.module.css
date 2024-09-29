@@ -30,23 +30,3 @@
     transform: translate3d(20px, 380px, 0px);
 }
 
-
-.leftArrow, .rightArrow{
-    border-radius: 100%;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    transform: translate3d(-20px, 200px, 0px);
-    background-color: #1A1A2E;
-    color: white;
-    border: 0px;
-    z-index: 1;
-}
-.rightArrow{
-    transform: translate3d(117vh, 200px, 0px);
-}
-
-.leftArrow:hover, .rightArrow:hover{
-    color: #FF8C42;
-    transition: 0.5s;
-}

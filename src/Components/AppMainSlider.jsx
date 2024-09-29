@@ -3,6 +3,7 @@ import classes from './AppMainSlider.module.css'
 
 import PulpFiction from "../assets/Images/PulpFiction.jpg";
 import TheDarkNight from "../assets/Images/TheDarkKnight.jpg";
+import Arrows from "./Arrows";
 
 const FilmList = [
     {
@@ -55,8 +56,7 @@ function AppMainSlider(){
                     <span className="material-symbols-outlined">star</span>
                     <p>{FilmList[currentIndex].Rating}</p>
                 </div>
-                <button className={classes.leftArrow} onClick={onClickHandler}><span className="material-symbols-outlined" style={{fontSize:'40px'}}>keyboard_arrow_left</span></button>
-                <button className={classes.rightArrow} onClick={onClickHandler}><span className="material-symbols-outlined" style={{fontSize:'40px'}}>keyboard_arrow_right</span></button>
+                <Arrows onClickNextHandler={onClickHandler} onClickPrevHandler={onClickHandler} LeftclassName="leftArrowSlider" RightclassName="rightArrowSlider"/>
             </div>
         </>
     )

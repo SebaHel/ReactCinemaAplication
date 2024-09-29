@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
+import { Link } from 'react-router-dom'
 
+import Arrows from './Arrows'
 import classes from './DayCard.module.css'
+
 function DayCard(){
     const [date, setDate] = useState([]);
     const [active, setActive] = useState(false);
@@ -43,15 +46,17 @@ function DayCard(){
     return (
         <>
         <div className={classes.dayContainer}>
-            {date.slice(0, 14).map((item, index) => (
+            {date.map((item, index) => (
+                <Link to={`/repertoire/${item.dayValue}`} style={{textDecoration:"none"}}>
                 <div key={index} className={`${classes.dayCard} ${active ? classes.active : ''}`}>
                     <h2>{item.dayValue}</h2>
                     <h2>{item.day}</h2>
                 </div>
+                </Link>
             ))}
-        </div>           
-        <button className={classes.leftArrow} onClick={onClickNoActiveHandler}><span className="material-symbols-outlined" style={{fontSize:'40px'}}>keyboard_arrow_left</span></button>
-        <button className={classes.rightArrow} onClick={onClickActiveHandler}><span className="material-symbols-outlined" style={{fontSize:'40px'}}>keyboard_arrow_right</span></button>
+        </div>       
+        <Arrows onClickNextHandler={onClickActiveHandler} onClickPrevHandler={onClickNoActiveHandler} LeftclassName="leftArrow1" RightclassName="rightArrow1"/>
+         
         </>
     )
 

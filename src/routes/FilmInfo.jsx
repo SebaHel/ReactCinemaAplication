@@ -1,4 +1,6 @@
 import { useParams } from "react-router-dom"
+import { getTime } from "../Components/RepertoireFilmList"
+
 
 import Header from "../Components/NavFiles/Header"
 import Footer from "../Components/NavFiles/Footer"
@@ -31,13 +33,6 @@ function FilmInfo(){
 
         return nextWeekDates.sort((a, b) => a.date - b.date);;
     };
-
-    const getTime = (time) => {
-        const [hours, minutes] = time.split(':').map(Number);
-        const newTime = new Date();
-        newTime.setHours(hours, minutes, 0, 0);
-        return newTime;
-    }
 
 
     return (
