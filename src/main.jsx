@@ -8,12 +8,14 @@ import './index.css'
 import Repertoire from './routes/Repertoire'
 import Pricing from './routes/Pricing'
 import FilmInfo from './routes/FilmInfo'
+import Reservation from './Components/Reservation'
 
 const router = createBrowserRouter([
   {path: '/', element: <App />},
   {path: '/repertoire/:Id', element: <Repertoire />},
   {path: '/pricing', element: <Pricing />},
-  {path: '/film/:Id', element: <FilmInfo />}
+  {path: '/film/:Id', element: <FilmInfo />},
+  {path: 'film/reservation/:Id', element: <Reservation />}
 ]);
 
 

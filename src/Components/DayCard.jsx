@@ -47,8 +47,8 @@ function DayCard(){
         <>
         <div className={classes.dayContainer}>
             {date.map((item, index) => (
-                <Link to={`/repertoire/${item.dayValue}`} style={{textDecoration:"none"}}>
-                <div key={index} className={`${classes.dayCard} ${active ? classes.active : ''}`}>
+                <Link key={index} to={`/repertoire/${item.dayValue}`} style={{textDecoration:"none"}}>
+                <div className={`${classes.dayCard} ${active ? classes.active : ''}`}>
                     <h2>{item.dayValue}</h2>
                     <h2>{item.day}</h2>
                 </div>

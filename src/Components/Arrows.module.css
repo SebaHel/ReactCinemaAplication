@@ -15,10 +15,10 @@
     color: black;
 }
 .leftArrow{
-    transform: translate3d(600px, 0px, 0);
+    transform: translate3d(500px, 0px, 0);
 }
 .rightArrow{
-    transform: translate3d(1400px, 0px, 0);
+    transform: translate3d(1300px, 0px, 0);
 }
 
 .leftArrow1, .rightArrow1{
