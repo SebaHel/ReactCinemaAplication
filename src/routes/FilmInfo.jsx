@@ -1,12 +1,12 @@
-import { useParams } from "react-router-dom"
+import { useParams, Link } from "react-router-dom"
 import { getTime } from "../Components/RepertoireFilmList"
 
-
+import classes1 from '../Components/RepertoireFilmList.module.css'
 import Header from "../Components/NavFiles/Header"
 import Footer from "../Components/NavFiles/Footer"
+
 import Films from '../assets/Films'
 import classes from './FilmInfo.module.css'
-import classes1 from '../Components/RepertoireFilmList.module.css'
 
 function FilmInfo(){
     const { Id } = useParams(); 
@@ -62,6 +62,7 @@ function FilmInfo(){
 
                                             if (sessionTime > currentTime  || dayInfo.day !== daysOfWeek[currentTime.getDay()]) {
                                                 return (
+                                                    <Link to={`/film/reservation/${film.Name.replace(/\s+/g, '')}%${time}`} id={classes.Link}>
                                                     <div key={index} className={classes1.box}>
                                                         <p className={classes1.time}>{time} - {film.EndTimes[index]}</p>
                                                         <div>
@@ -70,6 +71,7 @@ function FilmInfo(){
                                                             ))}
                                                         </div>
                                                     </div>
+                                                    </Link>
                                                 )
                                             
                                             }else{

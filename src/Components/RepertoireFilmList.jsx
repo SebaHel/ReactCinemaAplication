@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { useParams, Link } from "react-router-dom"
 
 import classes from './RepertoireFilmList.module.css'
 import Films from '../assets/Films'
@@ -37,14 +37,16 @@ export default function RepertoireFilmList(){
                                         
                                         if (sessionTime > currentTime)  {
                                             return (
-                                                <div key={index} className={classes.box}>
-                                                    <p className={classes.time}>{time} - {film.EndTimes[index]}</p>
-                                                    <div>
-                                                        {film.AudioOptions.map((audio, audioIndex) =>(
-                                                            <p key={audioIndex} className={classes.audio}>{audio}</p>
-                                                        ))}
+                                                <Link to={`/film/reservation/${film.Name.replace(/\s+/g, '')} ${time}`}  id={classes.Link} key={index} >
+                                                    <div className={classes.box}>
+                                                        <p className={classes.time}>{time} - {film.EndTimes[index]}</p>
+                                                        <div>
+                                                            {film.AudioOptions.map((audio, audioIndex) =>(
+                                                                <p key={audioIndex} className={classes.audio}>{audio}</p>
+                                                            ))}
+                                                        </div>
                                                     </div>
-                                                </div>
+                                                </Link>
                                             )
                                         }else{
                                             return null;
@@ -59,14 +61,16 @@ export default function RepertoireFilmList(){
                             <RepertoireModal film={film} key={film.id}>
                                         {film.Hours.map((time,index) => {                                
                                                 return (
-                                                    <div key={index} className={classes.box}>
-                                                        <p className={classes.time}>{time} - {film.EndTimes[index]}</p>
-                                                        <div>
-                                                            {film.AudioOptions.map((audio, audioIndex) =>(
-                                                                <p key={audioIndex} className={classes.audio}>{audio}</p>
-                                                            ))}
+                                                    <Link to={`/film/reservation/${film.Name.replace(/\s+/g,'')} ${time}`} id={classes.Link} key={index}>
+                                                        <div className={classes.box}>
+                                                            <p className={classes.time}>{time} - {film.EndTimes[index]}</p>
+                                                            <div>
+                                                                {film.AudioOptions.map((audio, audioIndex) =>(
+                                                                    <p key={audioIndex} className={classes.audio}>{audio}</p>
+                                                                ))}
+                                                            </div>
                                                         </div>
-                                                    </div>
+                                                    </Link>
                                                 )
                                         })}
                                </RepertoireModal>
