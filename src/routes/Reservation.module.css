@@ -1,0 +1,63 @@
+.reservationBody{
+    padding: 0 20% 0 20%;
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    justify-content: center;
+    height: 100vh;
+    margin-bottom: 0px;
+    
+}
+.filmInfo{
+    width: 200%;
+    height: 80%;
+    border-radius: 25px;
+    transform: translateX(-270px);
+    background-color: white;
+
+}
+
+.reservationContaineer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 60px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 60px 1fr 1fr 1fr;
+}
+.chair{
+    padding: 2px;
+    z-index: 1;
+}
+.line{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 30%;
+    height: 1px; 
+    background-color: rgba(128, 128, 128, 0.76); 
+    transform: translate3d(-25px, 15px, 0);
+}
+#label, #label2{
+    position: absolute;
+    color: white;
+    transform: translate3d(-30px, -10px, 0);
+}
+#label2{
+    transform: translate3d(535px, -10px, 0);
+}
+#screen{
+    border-top: 10px solid white;
+    border-radius: 5px;
+    margin-bottom: 140px;
+    width: 150%;
+    color: white;
+    text-align: center;
+    transform: translateX(-125px);
+}
+.submitButton{
+    color: white;
+    background-color: rgb(143, 143, 143);
+    border-radius: 25px;
+    text-align: center;
+    width: 70px;
+    height: 30px;
+    position: relative;
+    transform: translate3d(0px, 0px, 0);
+}

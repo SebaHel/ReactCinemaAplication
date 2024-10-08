@@ -7,6 +7,7 @@ import Footer from "../Components/NavFiles/Footer"
 
 import Films from '../assets/Films'
 import classes from './FilmInfo.module.css'
+import FilmLabel from "../Components/FilmLabel"
 
 function FilmInfo(){
     const { Id } = useParams(); 
@@ -43,14 +44,9 @@ function FilmInfo(){
                 <>
                     <div key={film.Id} className={classes.image}  style={{backgroundImage: `url(${film.img})`}}/>
                     <div className={classes.ContainerDescription}>
-                        <p id={classes.filmTitle}>{film.Name}</p>
-                        <div className={classes.filmDescription}>
-                            <p>{film.Name}</p>
-                            <p>{film.Rating}</p>
-                            <p>{film.Category}</p>
-                            <p>From: {film.MinAge}</p>
-                            <p>{film.Duration} min</p>
-                        </div>
+ 
+                        <FilmLabel film={film}/>
+                        
                         <p>{film.Description}</p>
                         <div className={classes1.filmBox} id={classes.filmBox}>
                             {getNextWeekDates().map((dayInfo, index) => (
@@ -62,7 +58,7 @@ function FilmInfo(){
 
                                             if (sessionTime > currentTime  || dayInfo.day !== daysOfWeek[currentTime.getDay()]) {
                                                 return (
-                                                    <Link to={`/film/reservation/${film.Name.replace(/\s+/g, '')}%${time}`} id={classes.Link}>
+                                                    <Link to={`/film/reservation/${film.Name.replace(/\s+/g, '')} ${time}`} id={classes.Link}>
                                                     <div key={index} className={classes1.box}>
                                                         <p className={classes1.time}>{time} - {film.EndTimes[index]}</p>
                                                         <div>

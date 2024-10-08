@@ -14,5 +14,6 @@ export default function RepertoireModal({children, film}){
                 </div>
              </div>
          </div>
+         
         )
 }

@@ -1,17 +1,19 @@
-import { useParams} from "react-router-dom"
+import { useParams, useNavigate} from "react-router-dom"
 import React, { useState } from 'react';
 
 import Footer from "../Components/NavFiles/Footer"
 import Header from "../Components/NavFiles/Header"
+import classes from "./Reservation.module.css"
 
 import Films from '../assets/Films'
+import FilmLabel from "../Components/FilmLabel";
 
 function Reservation(){
     const [clickedDivs, setClickedDivs] = useState([]);
-
+    const navigate = useNavigate();
     const { Id } = useParams(); 
     const [name,time] = Id.split(' ');
-    const film = Films.find(film => film.Name === name);
+    const film = Films.find(film => film.Name.replace(/\s+/g, '') === name);
 
     const handleDivClick = (divId) => {
         setClickedDivs((prevClickedDivs) => {
@@ -25,53 +27,49 @@ function Reservation(){
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('Clicked Divs:', clickedDivs);
+        console.log('You chosed ', clickedDivs);
+        alert(`You chosed ${clickedDivs}`);
+        setClickedDivs([]);
+        navigate('/');
     };
+    const CinemaGrid = Array.from({length: 10}, (_, rowIndex) => (
+        
+        <div key={rowIndex} className={classes.reservationContaineer}>
+        {Array.from({ length: 16 }, (_, colIndex) => (
+            <div key={colIndex} className={classes.chair}>
+                <div
+                onClick={() => handleDivClick((1 + colIndex).toString() + (1 +rowIndex).toString())}
+                >
+                    <span className="material-symbols-outlined" style={{
+                        color: clickedDivs.includes((1 + colIndex).toString() + (1 +rowIndex).toString()) ? 'red' : 'lightgrey',
+                         cursor: 'pointer'}}>
+                    weekend
+                    </span>
+                </div>
+            </div>
+            
+        ))}
+        <p id={classes.label}>{rowIndex}</p>
+        <p id={classes.label2}>{rowIndex}</p>
+        <div className={classes.line}/>
+    </div>
+    ))
+
+
 
     return (
         <>
             <Header />
-            <div>
-                
-            <div
-                onClick={() => handleDivClick('div1')}
-                style={{
-                    backgroundColor: clickedDivs.includes('div1') ? 'red' : 'lightgray',
-                    padding: '10px',
-                    width: '40px',
-                    marginBottom: '10px',
-                    cursor: 'pointer'
-                }}
-            >
-                Div 1
-            </div>
-            <div
-                onClick={() => handleDivClick('div2')}
-                style={{
-                    backgroundColor: clickedDivs.includes('div2') ? 'red' : 'lightgray',
-                    padding: '10px',
-                    width: '40px',
-                    marginBottom: '10px',
-                    cursor: 'pointer'
-                }}
-            >
-                Div 2
-            </div>
-            <div
-                onClick={() => handleDivClick('div3')}
-                style={{
-                    backgroundColor: clickedDivs.includes('div3') ? 'red' : 'lightgray',
-                    padding: '10px',
-                    width: '40px',
-                    marginBottom: '10px',
-                    cursor: 'pointer'
-                }}
-            >
-                Div 3
-            </div>
-
-            <button onClick={handleSubmit}>Submit</button>
-        </div>
+            <div className={classes.reservationBody}>
+                <div className={classes.filmInfo}>
+                    <FilmLabel film={film}/>
+                </div>
+                <div className={classes.reservationBox}>
+                    <p id={classes.screen}>SCREEN</p>
+                    {CinemaGrid}
+                    <button onClick={handleSubmit} className={classes.submitButton}>Reserve</button>
+                </div> 
+            </div> 
             <Footer />
         </>
     )
