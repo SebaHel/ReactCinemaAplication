@@ -62,12 +62,24 @@ function Reservation(){
             <Header />
             <div className={classes.reservationBody}>
                 <div className={classes.filmInfo}>
+                    <div className={classes.image} style={{ backgroundImage: `url(${film.img})`}} /> 
                     <FilmLabel film={film}/>
                 </div>
                 <div className={classes.reservationBox}>
                     <p id={classes.screen}>SCREEN</p>
                     {CinemaGrid}
-                    <button onClick={handleSubmit} className={classes.submitButton}>Reserve</button>
+                    <div className={classes.legend}>
+                        <span style={{transform:' translate3d(0px, -25px, 0)', position:'absolute'}}>Legend</span>
+                        <div id={classes.redDot}/>
+                        <div id={classes.greyDot}/>
+                        <div id={classes.blueDot}/>
+                        <p>Free</p>
+                        <p>Choosen</p>
+                        <p>Reserved</p>
+                        <span className="material-symbols-outlined" id={classes.legendSeat}>weekend</span>
+                        <p id={classes.chairLabel}>Seat</p>
+                    </div>
+                    <button onClick={handleSubmit} className={classes.submitButton}>RESERVE</button>
                 </div> 
             </div> 
             <Footer />

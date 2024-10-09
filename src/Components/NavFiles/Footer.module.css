@@ -42,7 +42,9 @@ body{
 .socialSection div p{
     font-size: 18px;
 }
-.infoSection h4, .hoursSection h4, .socialSection h4 {
+.infoSection h4,
+.hoursSection h4,
+.socialSection h4 {
     margin-bottom: 10px;
     font-size: 18px;
     color: #FF8C42;
@@ -66,4 +68,31 @@ body{
     margin-top: 20px;
     font-size: 14px;
     color: #dddddd;
+}
+
+@media (max-width: 768px) {
+    .footerContent {
+        flex-direction: column;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 15px;
+    }
+
+    .footerContent > div {
+        margin: 5px 0;
+    }
+
+    .socialSection div p {
+        font-size: 16px;
+    }
+
+    .infoSection h4, 
+    .hoursSection h4, 
+    .socialSection h4 {
+        font-size: 16px;
+    }
+
+    .footerBottom {
+        font-size: 12px;
+    }
 }

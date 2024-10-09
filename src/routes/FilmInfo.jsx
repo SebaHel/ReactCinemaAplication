@@ -42,7 +42,7 @@ function FilmInfo(){
         <div className={classes.filmMain}>
             {film ? (
                 <>
-                    <div key={film.Id} className={classes.image}  style={{backgroundImage: `url(${film.img})`}}/>
+                    <div key={film.Id} className={classes.image}  style={{backgroundImage: `url(${film.img})`,  marginTop:' 50px'}}/>
                     <div className={classes.ContainerDescription}>
  
                         <FilmLabel film={film}/>
