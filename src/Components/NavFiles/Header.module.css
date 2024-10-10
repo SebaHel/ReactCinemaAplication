@@ -28,6 +28,14 @@ header{
     color: #FF8C42;
     transition: 0.5s;
 }
+
+.menuIcon {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
 label{
     position: absolute;
     color: black;
@@ -73,4 +81,81 @@ label{
     margin-bottom: 10px;
     font-size: 16px;
     text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+        display:grid;
+        grid-template-columns: 1fr auto;
+        overflow-x: hidden;
+    }
+
+    .nav {
+        flex-direction: column;
+        max-height: 0;
+        overflow: hidden;
+        width: 100%;
+        text-align: center;
+    }
+    .nav.open {
+        max-height: 300px;
+    }
+
+    .link {
+        padding: 10px 0;
+        font-size: 20px;
+    }
+
+    .menuIcon {
+        right: 120px;
+        display: block;
+        color: white;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        grid-template-columns: 1fr;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .link {
+        justify-content: center;
+        font-size: 16px;
+    }
+
+    .Repertoireinfo {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    .NavList {
+        margin: 0 10%;
+        width: 80%;
+    }
+
+    #description {
+        font-size: 14px;
+    }
+
+    .overlay {
+        top: 50px;
+        height: auto;
+    }
 }
