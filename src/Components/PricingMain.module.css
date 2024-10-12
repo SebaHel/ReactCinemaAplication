@@ -110,3 +110,112 @@
     font-family: 'Raleway',  sans-serif;
     font-weight: 600;
 }
+
+@media (max-width: 768px) {
+    .PriceMain {
+        margin-left: 5%;
+        margin-right: 5%;
+        height: auto;
+    }
+
+    .priceContainer {
+        width: 100%;
+        flex-direction: row;
+        padding: 15px;
+        gap: 15px;
+        height: auto;
+    }
+
+    .mainSeance {
+        height: 30vh;
+        transform: translate3d(165px, -35px, 0);
+        width: 160px;
+    }
+    .seance{
+        transform: translate3d(150px,-15px,0px);
+        font-weight: bold;
+    }
+
+    .TableInfo {
+        flex-direction: row;
+        gap: 20px;
+        transform: translateY(210px);
+        width: 100%;
+    }
+    .labels{
+        transform: translate3d(-40px, -10px, 0);
+    }
+    .ticket{
+        width: 100px;
+        height: 40px;
+    }
+    .Specialticket{
+        width: 110px;
+    }
+}
+
+@media (max-width: 480px) {
+    .PriceMain {
+        margin-left: 5%;
+        margin-right: 10%;
+        height: auto;
+    }
+
+    .priceContainer {
+        width: 100%;
+        flex-direction: row;
+        padding: 15px;
+        gap: 6px;
+        height: 20vh;
+    }
+
+    .mainSeance {
+        height: 23vh;
+        transform: translate3d(65px, -35px, 0);
+        width: 90px;
+    }
+    .mainSeance p{
+        font-size: 12px;
+    }
+    .seance{
+        transform: translate3d(39px,-15px,0px);
+        font-weight: bold;
+    }
+
+    .TableInfo {
+        flex-direction: row;
+        gap: 20px;
+        transform: translateY(152px);
+        font-size: 12px;
+        width: 87%;
+    }
+    .labels{
+        font-size: 12px;
+        transform: translate3d(-53px, -20px, 0);
+    }
+    .ticket{
+        width: 65px;
+        height: 25px;
+        font-size: 12px;
+        margin-top: 14px;
+    }
+    .Specialticket{
+        margin-top: 13px;
+        width: 65px;
+        height: 25px;
+    }
+    .SeanceInfo{
+        font-size: 12px;
+    }
+    #dot{
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: rgb(40, 40, 156);
+        transform: translate3d(-3px,0px,0);
+    }
+    .ticket #dot{
+        background-color: white;
+        transform: translate3d(10px,0px,0);
+    }
+}

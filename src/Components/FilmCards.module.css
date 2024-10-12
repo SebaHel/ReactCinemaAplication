@@ -36,3 +36,26 @@
     font-family: 'Montserrat', sans-serif;
 
 }
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+    }
+    a {
+        display: flex;
+        justify-content: center;
+    }
+    .Repertoireinfo {
+        width: 180px;
+        height: 260px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nameParagraph {
+        font-size: 25px; 
+    }
+}

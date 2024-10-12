@@ -23,7 +23,7 @@
     background-color: white;
 }
 .dayCard.active{
-    transform: translateX(-750px)
+    transform: translateX(-749px)
 }
 .dayCard h2{
     position: relative;
@@ -43,14 +43,17 @@
 
 @media (max-width: 768px) {
     .dayContainer {
-        width: 90%; 
-        transform: translate3d(20px, 50px, 0);
+        width: 82%; 
+        transform: translate3d(70px, 50px, 0);
         gap: 15px;
     }
 
     .dayCard {
         width: 75px;
         height: 75px;
+    }
+    .dayCard.active{
+        transform: translateX(-644px)
     }
 
     .dayCard h2 {
@@ -69,8 +72,11 @@
     }
 
     .dayCard {
-        width: 65px; 
-        height: 65px;
+        width: 50px; 
+        height: 50px;
+    }
+    .dayCard.active{
+        transform: translateX(-433px)
     }
 
     .dayCard h2 {

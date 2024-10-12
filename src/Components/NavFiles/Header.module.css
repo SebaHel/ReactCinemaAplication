@@ -88,21 +88,26 @@ label{
     header {
         width: 100%;
         margin: 0;
-        padding: 10px;
+        padding: 0px;
         display:grid;
         grid-template-columns: 1fr auto;
         overflow-x: hidden;
     }
 
     .nav {
+        position: relative;
         flex-direction: column;
         max-height: 0;
         overflow: hidden;
         width: 100%;
         text-align: center;
     }
+    .nav a{
+        justify-content: center;
+    }
     .nav.open {
-        max-height: 300px;
+        max-height: max-content;
+        text-align: center;
     }
 
     .link {
@@ -115,15 +120,53 @@ label{
         display: block;
         color: white;
     }
+
+    .overlay {
+        position: relative;
+        top: 0px;
+        height: 40vh;
+    }
+
+    .NavList {
+        gap: 5px;
+        margin: 0 10% 0 5%;
+        width: 100%;
+        height: 41vh;
+        flex-direction: row;
+        position: relative;
+
+    }
+
+    .Repertoireinfo {
+        margin: 30px auto;
+        margin-bottom: 0px;
+        width: 110px;
+        height: 160px;
+    }
+
+    #description {
+        transform: translateY(200px);
+        font-size: 14px;
+        text-align: center;
+    }
+
+    label{
+        position: absolute;
+        color: black;
+        margin: 0px;
+    }
+
 }
 
 @media (max-width: 480px) {
     header {
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 3%;
-        margin-bottom: 3%;
-        grid-template-columns: 1fr;
+        width: 100%;
+        margin: 0;
+        padding-top: 5%;
+        padding: 0;
+        display:grid;
+        grid-template-columns: 1fr auto;
+        overflow-x: hidden;
     }
 
     .nav {
@@ -137,12 +180,14 @@ label{
         justify-content: center;
         font-size: 16px;
     }
-
+    .overlay{
+        width: 100%;
+    }
     .Repertoireinfo {
         margin-left: 0;
         margin-top: 20px;
-        width: 100%;
-        height: auto;
+        margin-bottom: 0;
+        height: max-content;
     }
 
     .NavList {
@@ -151,11 +196,29 @@ label{
     }
 
     #description {
+        margin: 0;
         font-size: 14px;
     }
 
-    .overlay {
-        top: 50px;
-        height: auto;
+    .NavList {
+        position: absolute;
+        gap: 5px;
+        margin: 0;
+        width: 100vw;
+        height: 35vh;
+        flex-direction: row;
+
+    }
+
+    .Repertoireinfo {
+        width: 90px;
+        height: 150px;
+    }
+
+    #description {
+        transform: translateY(180px);
+        font-size: 12px;
+        text-align: center;
+        margin-top: 10px;
     }
 }
