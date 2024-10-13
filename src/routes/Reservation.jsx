@@ -69,7 +69,7 @@ function Reservation(){
                     <p id={classes.screen}>SCREEN</p>
                     {CinemaGrid}
                     <div className={classes.legend}>
-                        <span style={{transform:' translate3d(0px, -25px, 0)', position:'absolute'}}>Legend</span>
+                        <span id={classes.description}>Legend</span>
                         <div id={classes.redDot}/>
                         <div id={classes.greyDot}/>
                         <div id={classes.blueDot}/>

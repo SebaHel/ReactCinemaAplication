@@ -49,7 +49,7 @@
     height: 50px;
     position: absolute;
     transform: translate3d(-20px, 200px, 0px);
-    background-color: #1A1A2E;
+    background-color: #0F0E17;
     color: white;
     border: 0px;
     z-index: 1;
@@ -61,6 +61,44 @@
 .leftArrowSlider:hover, .rightArrowSlider:hover{
     color: #FF8C42;
     transition: 0.5s;
+}
+@media (max-width: 1024px) {
+        /* AppMainSlider Arrows */
+        .leftArrowSlider, .rightArrowSlider {
+            width: 50px; 
+            height: 50px;
+            transform: translate3d(-410px, 150px, 0);
+        }
+    
+        .rightArrowSlider {
+            transform: translate3d(40vw, 150px, 0); 
+        }
+        
+    
+        .leftArrow, .rightArrow {
+            width: 50px;
+            height: 50px;
+            transform: translate3d(0px, 0px, 0);
+        }
+    
+        .leftArrow {
+            transform: translate3d(300px, 0px, 0);
+        }
+    
+        .rightArrow {
+            transform: translate3d(600px, 0px, 0);
+        }
+            /* DayCard Arrows */
+        .leftArrow1, .rightArrow1 {
+            width: 50px;
+            height: 50px;
+            transform: translate3d(20px, -10px, 0);
+        }
+
+        .rightArrow1 {
+            transform: translate3d(717px, -10px, 0);
+        }
+    
 }
 
 @media (max-width: 768px) {

@@ -1,11 +1,12 @@
 import { useParams, Link } from "react-router-dom"
 import { getTime } from "../Components/RepertoireFilmList"
 
-import classes1 from '../Components/RepertoireFilmList.module.css'
+
 import Header from "../Components/NavFiles/Header"
 import Footer from "../Components/NavFiles/Footer"
 
 import Films from '../assets/Films'
+import classes1 from '../Components/RepertoireFilmList.module.css'
 import classes from './FilmInfo.module.css'
 import FilmLabel from "../Components/FilmLabel"
 

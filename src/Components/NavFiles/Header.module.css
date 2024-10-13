@@ -83,6 +83,39 @@ label{
     text-decoration: none;
 }
 
+@media (max-width: 1024px) {
+    header {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .nav {
+        gap: 20px;
+        font-size: 20px;
+        align-items: center;
+    }
+
+    .link {
+        justify-content: left;
+        font-size: 18px;
+    }
+
+    .NavList {
+        margin: 0 5%;
+        width: 90%;
+    }
+
+    .Repertoireinfo {
+        width: 125px;
+        height: 200px;
+    }
+    
+
+    #description {
+        font-size: 14px;
+        transform: translateY(220px);
+    }
+}
 
 @media (max-width: 768px) {
     header {

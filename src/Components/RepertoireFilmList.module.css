@@ -83,3 +83,144 @@
     text-decoration: none;
 }
 
+@media (max-width: 1024px) {
+    .FilmContainer {
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    .card {
+        flex-direction: row;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+    .Repertoireinfo {
+        width: 180px;
+        height: 250px;
+    }
+
+    .nameParagraph {
+        font-size: 22px;
+    }
+
+    .descriptionParagraph {
+        font-size: 16px;
+    }
+
+    .filmBox {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .box {
+        width: 100%;
+        height: 80px;
+        padding-left: 10px;
+    }
+
+    .time {
+        font-size: 16px;
+    }
+
+    .audio {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .FilmContainer {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    .card {
+        flex-direction: row;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+    .Repertoireinfo {
+        width: 180px;
+        height: 250px;
+    }
+
+    .nameParagraph {
+        font-size: 22px;
+    }
+
+    .descriptionParagraph {
+        font-size: 16px;
+    }
+
+    .filmBox {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .box {
+        width: 100%;
+        height: 80px;
+        padding-left: 10px;
+    }
+
+    .time {
+        font-size: 16px;
+    }
+
+    .audio {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .FilmContainer {
+        width: 100%;
+        margin: 0;
+    }
+
+    .card {
+        flex-direction: row;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .Repertoireinfo {
+        width: 120px;
+        height: 240px;
+    }
+
+    .nameParagraph {
+        font-size: 20px;
+    }
+
+    .descriptionParagraph {
+        font-size: 14px;
+    }
+
+    .filmBox {
+        flex-direction: row;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .box {
+        width: 100%;
+        height: 80px;
+        padding-left: 5px;
+    }
+
+    .time {
+        font-size: 14px;
+    }
+
+    .audio {
+        transform: translateY(-10px);
+        font-size: 10px;
+    }
+}

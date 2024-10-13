@@ -44,6 +44,26 @@
     
 }
 
+@media (max-width: 1024px) {
+    .slider {
+        gap: 20px;
+    }
+
+    .Repertoireinfo {
+        width: 250px;
+        height: 350px;
+    }
+
+    .nameParagraph {
+        font-size: 18px;
+    }
+
+    .slider::before,
+    .slider::after {
+        width: 400px;
+    }
+}
+
 @media (max-width: 768px) {
     .slider {
         gap: 15px;

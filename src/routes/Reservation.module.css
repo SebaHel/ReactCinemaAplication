@@ -94,6 +94,10 @@
     transform: translateX(40px);
     padding: 20px;
 }
+#description{
+    position: absolute;
+    transform: translate3d(30px, -20px, 0px);
+}
 #chairLabel{
     position: absolute;
     transform: translate3d(585px, 18px, 0);
@@ -116,4 +120,228 @@
 #blueDot{
     background-color: blue;
     transform: translate3d(275px, 20px, 0);
+}
+
+@media (max-width: 1024px){
+    .reservationBody {
+        width: 80%;
+        height: 100vh;
+        padding-top: 0%;
+        padding: 0% 10% 0% 10%;
+    }
+    .reservationContaineer{
+        width: fit-content;
+        transform: translateX(28px);
+    }
+    .filmInfo {
+        width: 95%;
+        font-size: 12px;
+    }
+    .image {
+        height: 400px;
+    }
+    #screen{
+        width: 100%;
+        transform: translateX(40px);
+    }
+    .line{
+        width: 109%;
+    }
+    #label2{
+        transform: translate3d(530px, -10px, 0);
+    }
+
+    .legend {
+        gap: 0;
+        width: 55%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        transform: translate3d(0px, 0px, 0px);
+    }
+    .legend p{
+        transform: translateX(20px);
+        padding: 20px;
+    }
+    #description{
+        position: absolute;
+        transform: translate3d(30px, -20px, 0px);
+    }
+    #greyDot{
+        transform: translate3d(5px, 20px, 0);
+    }
+    #redDot{
+        transform: translate3d(150px, 20px, 0);
+    }
+    #blueDot{
+        transform: translate3d(290px, 20px, 0);
+    }
+    #chairLabel{
+        transform: translate3d(490px, 18px, 0);
+    }
+    .submitButton {
+        transform: translate3d(360px, 160px, 0);
+    }
+}
+
+@media (max-width: 768px) {
+    .reservationBody {
+        padding: 0;
+        grid-template-columns: 1fr;
+        height: 185vh;
+    }
+    .reservationContaineer{
+        transform: translateX(88px);
+    }
+    .chair span{
+        font-size: 30px;
+    }
+
+    .reservationBox{
+        position: relative;
+        height: 80vh;
+    }
+    .filmInfo {
+        width: 80%;
+    }
+
+    .image {
+        height: 400px;
+    }
+    #screen {
+        margin-top: 60px;
+        width: 100%;
+        transform: translateX(0);
+    }
+
+    .submitButton {
+        font-size: 28px;
+        width: 160px;
+    }
+
+    .legend {
+        gap: 0;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        transform: translate3d(0px, 0px, 0px);
+    }
+    .legend p{
+        transform: translateX(20px);
+        padding: 20px;
+    }
+    #description{
+        position: absolute;
+        transform: translate3d(70px, -20px, 0px);
+    }
+    #label2{
+        transform: translate3d(620px, -10px, 0);
+    }
+    .line{
+        width: 109%;
+    }
+    #greyDot{
+        transform: translate3d(5px, 20px, 0);
+    }
+    #redDot{
+        transform: translate3d(200px, 20px, 0);
+    }
+    #blueDot{
+        transform: translate3d(390px, 20px, 0);
+    }
+    #chairLabel{
+        transform: translate3d(680px, 18px, 0);
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .reservationBody {
+        height: 145vh;
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding: 0;
+        margin: 0
+    }
+
+    .filmInfo {
+        width: 100%;
+    }
+    .reservationBox{
+        position: relative;
+        width: 100%;
+        height: 80vh;
+    }
+    .reservationContaineer{
+        grid-template-columns: 1fr 1fr 30px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 30px 1fr 1fr 1fr;
+        width: fit-content;
+        transform: translateX(10px);
+    }
+    .chair span{
+        font-size: 20px;
+    }
+    .image {
+        height: 300px;
+    }
+
+    .submitButton {
+        font-size: 24px;
+        width: 140px;
+        height: 50px;
+        transform: translate3d(0, 150px, 0);
+    }
+
+    #screen {
+        margin-top: 40px;
+        width: 100%;
+        transform: translateX(0);
+    }
+
+    .legend {
+        left: 0;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        font-size: 20px;
+        gap: 0;
+        transform: translate3d(0px, 0px, 0);
+    }
+
+    #legendSeat {
+        font-size: 30px;
+    }
+
+    .legend p {
+        padding: 10px;
+        transform: translate3d(20px, 0px, 0);
+    }
+
+    #label, #label2{
+        position: absolute;
+        color: white;
+        transform: translate3d(-10px, -10px, 0);
+    }
+    #label2{
+        transform: translate3d(400px, -10px, 0);
+    }
+    .line{
+        width: 102%;
+        transform: translate3d(-3px, 15px, 0);
+    }
+    #description{
+        transform: translate3d(40px, -25px, 0);
+    }
+    #greyDot{
+        transform: translate3d(0px, 0px, 0);
+    }
+    #redDot{
+        transform: translate3d(105px, 0px, 0);
+    }
+    #blueDot{
+        transform: translate3d(210px, 0px, 0);
+    }
+    #chairLabel{
+        transform: translateX(360px);
+    }
+    #legendSeat{
+        transform: translateX(-20px);
+    }
 }

@@ -40,6 +40,26 @@
     transition: 0.5;
     
 }
+@media (max-width: 1024px) {
+    .dayContainer {
+        width: 78%; 
+        transform: translate3d(80px, 50px, 0);
+        gap: 15px;
+    }
+
+    .dayCard {
+        width: 75px;
+        height: 75px;
+    }
+    .dayCard.active{
+        transform: translateX(-644px)
+    }
+
+    .dayCard h2 {
+        font-size: 14px;
+        top: 8px;
+    }
+}
 
 @media (max-width: 768px) {
     .dayContainer {

@@ -111,6 +111,52 @@
     font-weight: 600;
 }
 
+@media (max-width: 1024px) {
+    .PriceMain {
+        margin-left: 10%;
+        margin-right: 10%;
+        height: auto;
+    }
+
+    .priceContainer {
+        width: 100%;
+        flex-direction: row;
+        padding: 15px;
+        gap: 35px;
+        height: auto;
+    }
+
+    .mainSeance {
+        height: 30vh;
+        transform: translate3d(215px, -35px, 0);
+        width: 160px;
+    }
+    .seance{
+        transform: translate3d(210px,-15px,0px);
+        font-weight: bold;
+    }
+
+    .TableInfo {
+        flex-direction: row;
+        gap: 20px;
+        transform: translateY(210px);
+        width: 100%;
+    }
+    .TableInfo p{
+        transform: translateX(-100px);
+    }
+    .labels{
+        transform: translate3d(-40px, -10px, 0);
+    }
+    .ticket{
+        width: 100px;
+        height: 40px;
+    }
+    .Specialticket{
+        width: 110px;
+    }
+}
+
 @media (max-width: 768px) {
     .PriceMain {
         margin-left: 5%;

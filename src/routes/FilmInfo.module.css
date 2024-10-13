@@ -43,3 +43,103 @@
 #Link{
     text-decoration: none;
 }
+
+@media (max-width: 1024px) {
+    .filmMain {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .filmMain {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .image {
+        width: 100%;
+        height: 350px;
+        margin: 0 auto;
+    }
+
+    .filmDescription {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    #filmTitle {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .ContainerDescription p {
+        text-align: center;
+    }
+
+    .boxContainer {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    #seanseDate {
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .filmMain {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        padding: 0;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .image {
+        width: 100vw;
+        height: 300px;
+        margin: 0;
+        transform: translateX(0px);
+    }
+
+
+    #filmTitle {
+        font-size: 28px;
+        text-align: center;
+    }
+    .filmDescription{
+        display: flex;
+        gap: 30px;
+    }
+    .ContainerDescription{
+        width: 100vw;
+    }
+    .ContainerDescription p {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .boxContainer {
+        padding: 5%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .boxContainer  a{
+        display: grid;
+        height: 10vh;
+    }
+    #seanseDate {
+        font-size: 18px;
+        text-align: center;
+    }
+
+}

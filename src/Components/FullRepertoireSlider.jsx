@@ -32,6 +32,10 @@ export default function FullRepertoireSlider(){
             return {
                 transform: `translateX(${-330 - (190 * currentIndex)}px`
             };
+        } else if (windowWidth < 1025) {
+            return {
+                transform: `translateX(${-400 - (240 * currentIndex)}px`
+            };
         } else {
             return {
                 transform: `translateX(${-200 - (300 * currentIndex)}px`
