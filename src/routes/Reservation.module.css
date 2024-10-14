@@ -187,6 +187,7 @@
         padding: 0;
         grid-template-columns: 1fr;
         height: 185vh;
+        width: 100%;
     }
     .reservationContaineer{
         transform: translateX(88px);
@@ -200,7 +201,7 @@
         height: 80vh;
     }
     .filmInfo {
-        width: 80%;
+        width: 100%;
     }
 
     .image {
@@ -209,7 +210,7 @@
     #screen {
         margin-top: 60px;
         width: 100%;
-        transform: translateX(0);
+        transform: translateX(0px);
     }
 
     .submitButton {
